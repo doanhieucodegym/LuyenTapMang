@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sắp xếp  mảng </title>
+</head>
+<body>
+<script>
+    function sapxepMang(){
+        let import_number = Number(prompt("nhập số phần từ của  mảng"));
+        let arry = new Array();
+        for(let i = 0; i< import_number ;i++){
+            let number = Number(prompt("Phần tử "+(i+1)));
+            arry[i]= number;
+
+        }
+        alert("Phần tử mảng là "+arry);
+        arry.sort();
+        document.write("sau khi  sắp xếp tăng :"+arry);
+        arry.reverse();
+        document.write("sau  khi giảm :"+arry)
+
+
+    }
+
+    sapxepMang();
+</script>
+</body>
+</html>

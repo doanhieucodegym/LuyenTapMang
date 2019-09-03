@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tim mảng  trong mang  nhập vào </title>
+</head>
+<body>
+<script>
+
+    function timmang() {
+        let import_number = Number(prompt("nhập số phần từ của  mảng"));
+        let arry = new Array();
+        for(let i = 0; i<= import_number ;i++){
+            let number = prompt("Phần tử "+(i+1));
+            arry[i]= number;
+
+        }
+        alert("Phần tử mảng là "+arry);
+        let search = Number(prompt("Nhập số  cần  tìm "));
+        for( let i =0 ;i < arry.length;i++){
+            if(search == arry[i]){
+                document.write("Tìm thấy"+search+ "trong chuỗi");
+                break;
+            }else{
+                document.write("Not found "+search+ "trong chuỗi");
+            }
+
+        }
+
+    }
+    timmang();
+</script>
+</body>
+</html>

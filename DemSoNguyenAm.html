@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Đếm số  nguyên âm  trong 1 chuỗi  nhập vào  </title>
+</head>
+<body>
+<script>
+    function demchuoi(){
+        let nhap = Number(prompt("Nhập số  phân tử  vao  chuỗi"))
+        let mang = new Array();
+        let count = 0;
+        for (let i =0 ;i <= nhap; i++){
+            let a =prompt("phần tử thứ"+(i+1));
+            mang[i]= a;
+        }
+        for (let i =0;i<mang.length;i++){
+            if(mang[i] <0){
+                count++;
+                document.write(mang[i]);
+            }
+
+        }
+        document.write("có"+count+"số  phần  tủ nhở hơn 0");
+
+
+    }
+    demchuoi();
+
+</script>
+</body>
+</html>

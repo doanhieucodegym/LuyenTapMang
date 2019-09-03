@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Nhập 10 phần tử trong mảng </title>
+</head>
+<body>
+<script>
+
+    function nhapmang() {
+        let number = Number(prompt("nhập sô lượng phần tử mang"));
+        let array = new Array();
+        for (i = 0; i <= number; i++) {
+            let pt = Number(prompt("phần tử " + (1 + i)));
+            array[i] = pt;
+
+        }
+        let count = 0;
+        for (let i = 0; i < array.length; i++) {
+            if (array[i] >= 10) {
+                count = count + 1;
+                let pt = array[i];
+                document.write("phần tử lớn  hơn 10 là : " + pt + "</br>");
+
+            }
+        }
+        document.write("có " + count + " phần tử  lớn hơn hoặc bằng 10 " + "</br>");
+        let max = 0;
+        let index =0;
+        for( let i =0 ;i <array.length; i ++){
+            if(array[i] >max){
+                max =array[i];
+                index = i;
+            }
+
+
+        }
+        document.write("phần  tử  có giá trị lớn nhất là "+ max+"</br>");
+        document.write("vị trí của  nó là :"+index);
+    }
+    ///tính ttrung bình
+    let sum =0;
+    for(let i = 0; i < array.length; i++){
+        sum = sum +array[i];
+    }
+    document.write("Trung bình của phần tử mảng"+sum/array.length);
+
+    nhapmang();
+</script>
+</body>
+</html>
